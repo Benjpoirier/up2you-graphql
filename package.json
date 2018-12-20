@@ -1,0 +1,38 @@
+{
+    "name": "up2you",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon --config ./config/nodemon.json --inspect"
+    },
+    "dependencies": {
+        "config": "^3.0.0",
+        "dotenv": "^6.2.0",
+        "graphql-yoga": "^1.16.7",
+        "pg": "^7.7.1",
+        "pg-hstore": "^2.3.2",
+        "sequelize": "^4.42.0",
+        "sequelize-cli": "^5.4.0",
+        "winston": "^3.1.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.0",
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-proposal-class-properties": "^7.2.1",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "@babel/register": "^7.0.0",
+        "babel-eslint": "^10.0.1",
+        "babel-plugin-transform-builtin-extend": "^1.1.2",
+        "eslint": "^5.10.0",
+        "eslint-config-prettier": "^3.3.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-prettier": "^3.0.0",
+        "nodemon": "^1.18.9",
+        "prettier": "^1.15.3"
+    },
+    "eslintIgnore": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,29 @@
+type Query {
+    me: User
+}
+
+type User {
+    name: String!
+}
+
+type Subscription {
+  feedSubscription: Post
+}
+
+type Post {
+  id: ID!
+  published: Boolean!
+  title: String!
+  content: String!
+  author: User!
+}
+
+type Mutation {
+    signup(email: String!, password: String!, name: String!): AuthPayload!
+    login(email: String!, password: String!): AuthPayload!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
